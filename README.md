@@ -33,7 +33,7 @@ Requires `racket` and `asm6`
 
 CO2 is meant to enable high-level structured programming while still providing access to low level facilities. It maintains some useful knowledge of ROM banks in order to make it easier to develop large scale games. It emphasizes writing fairly performant code, at the expense of some safety. In some cases, it has slightly leaky abstractions (such as putting state into the X and Y registers) that the compiler does not insulate you from. Basically: "you have to know what you're doing".
 
-The goal is to allow development of software that doens't absolutely require the performance of raw assembly, in a manner that's convenient for experimentation and understanding.
+The goal is to allow development of software that doesn't absolutely require the performance of raw assembly, in a manner that's convenient for experimentation and understanding.
 
 ## Features and benefits
 
@@ -63,7 +63,7 @@ The `cond` form can compile properly structured conditionals into lookup tables 
 
 ### optimizations
 
-A very simple peephole optimizer and tail call optimizer help squeek out ROM bytes and CPU cycles without any extra work.
+A very simple peephole optimizer and tail call optimizer help squeak out ROM bytes and CPU cycles without any extra work.
 
 ## Partially working features
 
@@ -77,7 +77,7 @@ Some 16-bit math exists, but support is lacking. Ideally, types would automatica
 
 ### cond
 
-Though `cond` will sometimes compile to efficient tables, it could use more work. Ideally, it would always use binary search over sorted values, and tables with small gaps whereever possible.
+Though `cond` will sometimes compile to efficient tables, it could use more work. Ideally, it would always use binary search over sorted values, and tables with small gaps wherever possible.
 
 ## Future features
 
